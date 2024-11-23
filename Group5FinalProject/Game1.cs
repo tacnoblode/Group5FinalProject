@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.CSharp;
+using System.Collections.Generic;
 
 namespace Group5FinalProject
 {
@@ -13,6 +14,9 @@ namespace Group5FinalProject
         private Viewport viewport;
 
         private MapManager mapManager;
+
+        Player GamePlayer;
+        Camera GameCamera;
 
 
         // GAME STATES:
@@ -31,6 +35,7 @@ namespace Group5FinalProject
 
         public Vector2 CameraPosition;
 
+        // Objects
 
         public Game1()
         {
@@ -58,8 +63,11 @@ namespace Group5FinalProject
 
             // Objects
             mapManager = new MapManager(this);
-            
-
+            GameCamera = new Camera(Vector2.Zero);
+            GamePlayer = new Player(Vector2.Zero,this,mapManager,GameCamera);
+            GameCamera.SetPlayerReference(GamePlayer);
+            mapManager.SetPlayerReference(GamePlayer);
+            mapManager.SetCameraReference(GameCamera);
         }
 
         protected override void Update(GameTime gameTime)
@@ -75,15 +83,11 @@ namespace Group5FinalProject
             switch (gameState)
             {
                 case 0:
-                    if (Keyboard.GetState().IsKeyDown(Keys.Enter)) { gameState = 1; }
+                    if (Keyboard.GetState().IsKeyDown(Keys.Enter)) { gameState = 1; mapManager.LoadMap(0); }
                     break;
                 case 1:
-                    // THIS IS ALL TEMPORARY: TO BE REMOVED
-                    if (Keyboard.GetState().IsKeyDown(Keys.Up)) { CameraPosition.Y += 5; }
-                    if (Keyboard.GetState().IsKeyDown(Keys.Down)) { CameraPosition.Y -= 5; }
-                    if (Keyboard.GetState().IsKeyDown(Keys.Left)) { CameraPosition.X += 5; }
-                    if (Keyboard.GetState().IsKeyDown(Keys.Right)) { CameraPosition.X -= 5; }
-
+                    GamePlayer.DoInputLogic();
+                    GameCamera.UpdatePosition();
                     break;
             }
 
