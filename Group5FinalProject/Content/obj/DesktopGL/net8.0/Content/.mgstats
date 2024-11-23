@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Group5Project/Group5FinalProject/Content/DefaultFont.spritefont","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/DefaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.2147321
+"C:/Group5Project/Group5FinalProject/Content/WhiteBlock.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/WhiteBlock.xnb","TextureProcessor","Texture2DContent",232,16469,0.0044129
+"E:/WhiteBlock.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/WhiteBlock.xnb","TextureProcessor","Texture2DContent",147,16469,0.1245008

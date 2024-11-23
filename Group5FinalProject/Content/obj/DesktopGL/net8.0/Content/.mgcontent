@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Group5Project/Group5FinalProject/Content/DefaultFont.spritefont</File>
+    <File>E:/WhiteBlock.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/WhiteBlock.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File>WhiteBlock.png</File>
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
