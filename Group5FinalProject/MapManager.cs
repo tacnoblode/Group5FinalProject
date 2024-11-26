@@ -17,7 +17,7 @@ namespace Group5FinalProject
         List<string[]> Maps = new List<string[]>();
 
         // The map that is loaded into memory
-        List<string> CurrentMap;
+        public List<string> CurrentMap;
 		public List<Enemy> AllEnemies;
 
 		public MapManager(Game1 gameReference)
@@ -66,9 +66,12 @@ namespace Group5FinalProject
             {
                 for (int j = 0; j < CurrentMap[i].Length; j++)
                 {
-                    if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * 64), Color.Black); }
+                    if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Black); }
+                    if (CurrentMap[i][j] == '_') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Blue); }
                     
-                    if (CurrentMap[i][j] == 'X') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * 64), Color.Brown); }
+                    if (CurrentMap[i][j] == 'X') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Brown); }
+                    if (CurrentMap[i][j] == 'F') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Yellow); }
+                    if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkGreen); }
                 }
             }
 
@@ -77,11 +80,11 @@ namespace Group5FinalProject
             {
                 if (enemy.isEnemyActive)
                 {
-                    spriteBatch.Draw(GameReference.fallbackTexture, enemy.Position * 64 + (camera.Position * 64), Color.Red);
+                    spriteBatch.Draw(GameReference.fallbackTexture, enemy.Position * 64 + (camera.Position * -64), Color.Red);
                 }
             }
 
-            spriteBatch.Draw(GameReference.fallbackTexture, player.Position * 64 + (camera.Position * 64), Color.Green);
+            spriteBatch.Draw(GameReference.fallbackTexture, player.Position * 64 + (camera.Position * -64), Color.Green);
         }
 
 		public void SetPlayerReference(Player player)
@@ -94,22 +97,67 @@ namespace Group5FinalProject
 			this.camera = camera;
 		}
 
+
+        public char GetObjectAtCoordinate(Vector2 coords)
+        {
+            // This function should work not just for the player but every class that needs collision.
+            // For collision checking: Check the space that the object is trying to move to with this function
+            // (eg. if an object is at {0,0} and is moving right, check if GetObjectAtCoordinate({1,0}) != "#"
+            if (coords.X >= 0 && coords.Y >= 0 && CurrentMap.Count > coords.Y)
+            {
+                if (CurrentMap[Convert.ToInt32(coords.Y)].Length > coords.X)
+                {
+                    // Check all enemies first to see if they're at the position
+                    foreach( Enemy enemy in AllEnemies)
+                    {
+                        if (enemy.isEnemyActive && enemy.Position == coords) { Debug.Print("E"); return 'E'; }
+                    }
+                    // If the code hasn't returned from any of those, return whatever's at the map at the coords
+                    return CurrentMap[Convert.ToInt32(coords.Y)][Convert.ToInt32(coords.X)];
+
+				}
+            }
+            // If the coordinates are outside the map range, just return a blank space instead.
+            return '_';
+        }
+
+        public void ReplaceObjectAtPositionWith(Vector2 coords, char ToReplaceWith)
+        {
+            // Check if the position at the coordinates are valid
+			if (coords.X >= 0 && coords.Y >= 0 && CurrentMap.Count > coords.Y)
+			{
+				if (CurrentMap[Convert.ToInt32(coords.Y)].Length > coords.X)
+				{
+                    string MapLine = "";
+                    for (int i = 0; i < CurrentMap[Convert.ToInt32(coords.Y)].Length; i++)
+                    {
+                        if(i == Convert.ToInt32(coords.X)) { MapLine += ToReplaceWith; }
+                        else { MapLine += CurrentMap[Convert.ToInt32(coords.Y)][i]; }
+                    }
+					CurrentMap[Convert.ToInt32(coords.Y)] = MapLine;
+				}
+			}
+		}
+
 		// MAP DATABASE BELOW //
 
 		// Symbols:
 		// # - Wall object
 		// E - Enemy object
 		// P - Player spawn point
+		// X - Crate (to be removed?)
+		// F - Level End Flag
+        // p - The previous positions the player were in
 
 		public void LoadMapDatabase()
 		{
 			// Place your maps in one of these functions to add them into the list
 			Maps.Add(new string[]
 			{
-				"##########",
-				"#_E__#___#",
-				"#____#_X_#",
-				"#____###_#",
+				"##############",
+				"#_E__#_______#",
+				"#____#_X_#__F#",
+				"#____###_#####",
 				"#P_______#",
 				"##########"
 			});

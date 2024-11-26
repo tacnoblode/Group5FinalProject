@@ -24,6 +24,7 @@ namespace Group5FinalProject
         // 1 - Ingame Logic
         // 2 - Intermission Screen
         public int gameState = 0;
+        public int levelId = 0;
 
         // Timers
         public int FramesElapsed = 0;
@@ -63,7 +64,7 @@ namespace Group5FinalProject
 
             // Objects
             mapManager = new MapManager(this);
-            GameCamera = new Camera(Vector2.Zero);
+            GameCamera = new Camera(Vector2.Zero, this);
             GamePlayer = new Player(Vector2.Zero,this,mapManager,GameCamera);
             GameCamera.SetPlayerReference(GamePlayer);
             mapManager.SetPlayerReference(GamePlayer);
@@ -83,7 +84,14 @@ namespace Group5FinalProject
             switch (gameState)
             {
                 case 0:
-                    if (Keyboard.GetState().IsKeyDown(Keys.Enter)) { gameState = 1; mapManager.LoadMap(0); }
+                    if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+                    { 
+                        // Set the game state to 1 (The main game stage)
+                        gameState = 1;
+                        
+                        // TODO: Replace the 0 in the function call with the level number to load.
+                        mapManager.LoadMap(levelId); 
+                    }
                     break;
                 case 1:
                     GamePlayer.DoInputLogic();

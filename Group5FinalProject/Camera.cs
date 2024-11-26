@@ -7,15 +7,17 @@ namespace Group5FinalProject
 	{
 		// References
 		Player player;
+		Game1 GameReference;
 
 		// Control Variables
 		public Vector2 Position;
 
 		public Vector2 TempPosition;
 
-		public Camera(Vector2 position)
+		public Camera(Vector2 position, Game1 GameRef)
 		{
 			Position = position;
+			GameReference = GameRef;
 		}
 
 		public void SetPlayerReference(Player player)
@@ -25,8 +27,13 @@ namespace Group5FinalProject
 
 		public void UpdatePosition()
 		{
-			TempPosition += new Vector2((float)((player.Position.X - TempPosition.X) * 1.05), (float)((player.Position.Y - TempPosition.Y) * 1.05));
-			Position = TempPosition + new Vector2(4f, -5f);
+			TempPosition = player.Position;
+			Position += ((TempPosition + new Vector2(-6, -3)) - Position) * 1.15f;
+		}
+
+		public void DrawUIOnScreen()
+		{
+			// TODO: Draw the UI (Text that shows the player's score, the time spent in the level, and what level # the player is on.)
 		}
 	}
 }

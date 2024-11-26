@@ -33,6 +33,8 @@ namespace Group5FinalProject
             // This method will be called whenever the game wants to move the enemy (about 10 times a second)
             // TODO: Move the enemy in whatever direction it is facing
             // TODO: When the enemy reaches a wall, rotate the enemy to move in a different direction
+
+            // You should use the function MapManager.GetObjectAtCoordinate(Vector2) to check what the space ahead of the enemy is.
         }
     }
 }
