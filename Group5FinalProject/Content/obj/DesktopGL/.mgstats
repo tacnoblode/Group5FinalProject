@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/DefaultFont.spritefont","C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/bin/DesktopGL/DefaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.1586712
+"C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/WhiteBlock.png","C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/bin/DesktopGL/WhiteBlock.xnb","TextureProcessor","Texture2DContent",232,16469,0.0123235
