@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\",
+  "WorkspaceRootPath": "C:\\Group5Project\\Group5FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\content\\content.mgcb||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:content\\content.mgcb||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\titlescreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:titlescreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\intermissionscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:intermissionscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\prog2370 - game prog\\final project\\group5finalproject\\group5finalproject\\content\\whiteblock.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\content\\content.mgcb||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:content\\content.mgcb||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\content\\whiteblock.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:content\\whiteblock.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     }
   ],
@@ -42,8 +50,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -58,95 +70,117 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Camera.cs",
-              "RelativeDocumentMoniker": "Camera.cs",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Camera.cs",
-              "RelativeToolTip": "Camera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:09:00.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCsAAADJAAAAAAAAAA==",
+              "Title": "IntermissionScreenManager.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\IntermissionScreenManager.cs",
+              "RelativeDocumentMoniker": "IntermissionScreenManager.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\IntermissionScreenManager.cs",
+              "RelativeToolTip": "IntermissionScreenManager.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCIAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T15:22:05.765Z",
+              "WhenOpened": "2024-11-26T17:44:46.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Enemy.cs",
-              "RelativeDocumentMoniker": "Enemy.cs",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Enemy.cs",
-              "RelativeToolTip": "Enemy.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAACDAAAAAAAAAA==",
+              "Title": "TitleScreenManager.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\TitleScreenManager.cs",
+              "RelativeDocumentMoniker": "TitleScreenManager.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\TitleScreenManager.cs",
+              "RelativeToolTip": "TitleScreenManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T14:08:46.982Z",
+              "WhenOpened": "2024-11-26T17:30:05.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MapManager.cs",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\MapManager.cs",
-              "RelativeDocumentMoniker": "MapManager.cs",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\MapManager.cs",
-              "RelativeToolTip": "MapManager.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowEUAAACkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T00:12:41.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Game1.cs",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Game1.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Game1.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Game1.cs",
               "RelativeToolTip": "Game1.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwFwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAIwHkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T23:12:37.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDoAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T15:22:05.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Camera.cs",
+              "RelativeDocumentMoniker": "Camera.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Camera.cs",
+              "RelativeToolTip": "Camera.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T00:09:00.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Enemy.cs",
+              "RelativeDocumentMoniker": "Enemy.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Enemy.cs",
+              "RelativeToolTip": "Enemy.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCUAAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T14:08:46.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MapManager.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\MapManager.cs",
+              "RelativeDocumentMoniker": "MapManager.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\MapManager.cs",
+              "RelativeToolTip": "MapManager.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T00:12:41.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "WhiteBlock.png",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Content\\WhiteBlock.png",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Content\\WhiteBlock.png",
               "RelativeDocumentMoniker": "Content\\WhiteBlock.png",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Content\\WhiteBlock.png",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Content\\WhiteBlock.png",
               "RelativeToolTip": "Content\\WhiteBlock.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2024-11-21T00:31:51.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Content.mgcb",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Content\\Content.mgcb",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Content\\Content.mgcb",
               "RelativeDocumentMoniker": "Content\\Content.mgcb",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Content\\Content.mgcb",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Content\\Content.mgcb",
               "RelativeToolTip": "Content\\Content.mgcb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -154,15 +188,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Program.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\PROG2370 - Game Prog\\Final Project\\Group5FinalProject\\Group5FinalProject\\Program.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T23:12:33.993Z"
+              "WhenOpened": "2024-11-20T23:12:33.993Z",
+              "EditorCaption": ""
             }
           ]
         }

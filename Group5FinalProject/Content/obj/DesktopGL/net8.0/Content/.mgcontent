@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/DefaultFont.spritefont</File>
-    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/WhiteBlock.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/DefaultFont.spritefont</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/WhiteBlock.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

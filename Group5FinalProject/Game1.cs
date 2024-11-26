@@ -11,9 +11,11 @@ namespace Group5FinalProject
         // Components
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private Viewport viewport;
+        public Viewport viewport;
 
         private MapManager mapManager;
+        private TitleScreenManager titleScreenManager;
+        private IntermissionScreenManager intermissionScreenManager;
 
         Player GamePlayer;
         Camera GameCamera;
@@ -26,15 +28,16 @@ namespace Group5FinalProject
         public int gameState = 0;
         public int levelId = 0;
 
+        public int gameScore = 0;
+
         // Timers
         public int FramesElapsed = 0;
         public double SecondsElapsed = 0;
 
         // Resources:
-        SpriteFont defaultFont;
+        public SpriteFont defaultFont;
         public Texture2D fallbackTexture;
 
-        public Vector2 CameraPosition;
 
         // Objects
 
@@ -48,9 +51,18 @@ namespace Group5FinalProject
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            CameraPosition = new Vector2(0, 0);
-
             base.Initialize();
+
+            // Objects
+            mapManager = new MapManager(this);
+            GameCamera = new Camera(Vector2.Zero, this);
+            GamePlayer = new Player(Vector2.Zero, this, mapManager, GameCamera);
+            titleScreenManager = new TitleScreenManager(this,mapManager);
+            intermissionScreenManager = new IntermissionScreenManager(this,mapManager);
+
+            GameCamera.SetPlayerReference(GamePlayer);
+            mapManager.SetPlayerReference(GamePlayer);
+            mapManager.SetCameraReference(GameCamera);
         }
 
         protected override void LoadContent()
@@ -61,14 +73,6 @@ namespace Group5FinalProject
             // Fonts and Sprites
             defaultFont = Content.Load<SpriteFont>("DefaultFont");
             fallbackTexture = Content.Load<Texture2D>("WhiteBlock");
-
-            // Objects
-            mapManager = new MapManager(this);
-            GameCamera = new Camera(Vector2.Zero, this);
-            GamePlayer = new Player(Vector2.Zero,this,mapManager,GameCamera);
-            GameCamera.SetPlayerReference(GamePlayer);
-            mapManager.SetPlayerReference(GamePlayer);
-            mapManager.SetCameraReference(GameCamera);
         }
 
         protected override void Update(GameTime gameTime)
@@ -84,18 +88,14 @@ namespace Group5FinalProject
             switch (gameState)
             {
                 case 0:
-                    if (Keyboard.GetState().IsKeyDown(Keys.Enter))
-                    { 
-                        // Set the game state to 1 (The main game stage)
-                        gameState = 1;
-                        
-                        // TODO: Replace the 0 in the function call with the level number to load.
-                        mapManager.LoadMap(levelId); 
-                    }
+                    titleScreenManager.TitleScreenInputs();
                     break;
                 case 1:
                     GamePlayer.DoInputLogic();
                     GameCamera.UpdatePosition();
+                    break;
+                case 2:
+                    intermissionScreenManager.IntermissionScreenInputs();
                     break;
             }
 
@@ -113,23 +113,16 @@ namespace Group5FinalProject
             switch (gameState)
             {
                 case 0:
-                    // Configure Content to show on the screen
-                    string gameTitle = "SUPER AWESOME GAME";
-                    Vector2 FontOrigin = defaultFont.MeasureString(gameTitle) / 2;
-                    Vector2 FontPosition = new Vector2(viewport.Width / 2, viewport.Height / 2);
-
-                    // Draw the contents onto the main menu screen
-                    _spriteBatch.DrawString(defaultFont,gameTitle,FontPosition - FontOrigin,Color.White);
-                    _spriteBatch.DrawString(defaultFont,"PRESS ENTER TO START",FontPosition - FontOrigin + new Vector2(0,200),Color.White);
-
-                    // Debug: Show the time elapsed
-                    _spriteBatch.DrawString(defaultFont,$"Seconds Elapsed: {SecondsElapsed}",new Vector2(0,0),Color.White);
-                    _spriteBatch.DrawString(defaultFont,$"Frames Elapsed: {FramesElapsed}",new Vector2(0,16),Color.White);
-
-
+                    // All drawing of the title screen to be handled inside of TitleScreenManager.cs
+                    titleScreenManager.DrawTitleScreen(_spriteBatch);
                     break;
                 case 1:
+                    // All game drawing is inside of MapManager.cs
                     mapManager.RenderMap(_spriteBatch);
+                    GameCamera.DrawUIOnScreen(_spriteBatch);
+                    break;
+                case 2:
+                    intermissionScreenManager.DrawIntermissionScreen(_spriteBatch);
                     break;
             }
 

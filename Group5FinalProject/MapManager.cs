@@ -29,6 +29,9 @@ namespace Group5FinalProject
 
         public void LoadMap(int mapIndex)
         {
+            // Reset the score
+            GameReference.gameScore = 0;
+
             // This function loads whichever map specified into memory.
 
             CurrentMap = new List<string>();
@@ -69,7 +72,6 @@ namespace Group5FinalProject
                     if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Black); }
                     if (CurrentMap[i][j] == '_') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Blue); }
                     
-                    if (CurrentMap[i][j] == 'X') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Brown); }
                     if (CurrentMap[i][j] == 'F') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Yellow); }
                     if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkGreen); }
                 }
@@ -145,7 +147,6 @@ namespace Group5FinalProject
 		// # - Wall object
 		// E - Enemy object
 		// P - Player spawn point
-		// X - Crate (to be removed?)
 		// F - Level End Flag
         // p - The previous positions the player were in
 
@@ -156,7 +157,7 @@ namespace Group5FinalProject
 			{
 				"##############",
 				"#_E__#_______#",
-				"#____#_X_#__F#",
+				"#____#___#__F#",
 				"#____###_#####",
 				"#P_______#",
 				"##########"

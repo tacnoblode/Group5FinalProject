@@ -54,8 +54,9 @@ namespace Group5FinalProject
 			{
 				// TODO: Transition into intermisison screen.
 				// TEMP CODE BELOW:
-				GameReference.gameState = 0;
+				GameReference.gameState = 2;
 			}
+			if (MapManager.GetObjectAtCoordinate(Position) == 'E') { MapManager.LoadMap(GameReference.levelId); }
 		}
 	}
 }

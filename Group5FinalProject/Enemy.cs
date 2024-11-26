@@ -35,6 +35,7 @@ namespace Group5FinalProject
             // TODO: When the enemy reaches a wall, rotate the enemy to move in a different direction
 
             // You should use the function MapManager.GetObjectAtCoordinate(Vector2) to check what the space ahead of the enemy is.
+            // GetObjectAtCoordinate(Vector2) returns a char representing what object is in that space. If it returns '#', that means the object at that coordinate is the wall.
         }
     }
 }
