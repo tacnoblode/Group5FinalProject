@@ -107,21 +107,25 @@ namespace Group5FinalProject
         {
             // Remember, this is ONLY to draw the screen, not to execute any logic.
 
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-            _spriteBatch.Begin();
 
             switch (gameState)
             {
                 case 0:
+                    GraphicsDevice.Clear(Color.CornflowerBlue);
+                    _spriteBatch.Begin();
                     // All drawing of the title screen to be handled inside of TitleScreenManager.cs
                     titleScreenManager.DrawTitleScreen(_spriteBatch);
                     break;
                 case 1:
+                    GraphicsDevice.Clear(Color.Black);
+                    _spriteBatch.Begin();
                     // All game drawing is inside of MapManager.cs
                     mapManager.RenderMap(_spriteBatch);
                     GameCamera.DrawUIOnScreen(_spriteBatch);
                     break;
                 case 2:
+                    GraphicsDevice.Clear(Color.CornflowerBlue);
+                    _spriteBatch.Begin();
                     intermissionScreenManager.DrawIntermissionScreen(_spriteBatch);
                     break;
             }

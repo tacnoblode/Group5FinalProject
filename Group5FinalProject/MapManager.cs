@@ -35,30 +35,34 @@ namespace Group5FinalProject
             // This function loads whichever map specified into memory.
 
             CurrentMap = new List<string>();
-            for (int i = 0; i < Maps[mapIndex].Length; i++)
+            AllEnemies = new List<Enemy>();
+            if (Maps.Count > mapIndex)
             {
-                string MapLine = "";
-                for (int j = 0; j < Maps[mapIndex][i].Length; j++)
+                for (int i = 0; i < Maps[mapIndex].Length; i++)
                 {
-                    if (Maps[mapIndex][i][j] == 'E')
+                    string MapLine = "";
+                    for (int j = 0; j < Maps[mapIndex][i].Length; j++)
                     {
-                        // If an enemy is found in the loading process, create a new enemy object
-                        // and change the line to be a blank character.
-                        AllEnemies.Add(new Enemy(GameReference, this, new Vector2(j, i)));
-                        MapLine += "-";
-					}
-					else if (Maps[mapIndex][i][j] == 'P')
-					{
-                        // If a player spawn is found, set the player's position to it, and change the line to be blank
-                        player.Position = new Vector2(j, i);
-						MapLine += "-";
-					}
-					else
-                    {
-						MapLine += Maps[mapIndex][i][j];
-					}
+                        if (Maps[mapIndex][i][j] == 'E')
+                        {
+                            // If an enemy is found in the loading process, create a new enemy object
+                            // and change the line to be a blank character.
+                            AllEnemies.Add(new Enemy(GameReference, this, new Vector2(j, i)));
+                            MapLine += "-";
+                        }
+                        else if (Maps[mapIndex][i][j] == 'P')
+                        {
+                            // If a player spawn is found, set the player's position to it, and change the line to be blank
+                            player.Position = new Vector2(j, i);
+                            MapLine += "-";
+                        }
+                        else
+                        {
+                            MapLine += Maps[mapIndex][i][j];
+                        }
+                    }
+                    CurrentMap.Add(MapLine);
                 }
-                CurrentMap.Add(MapLine);
             }
         }
 
@@ -70,7 +74,7 @@ namespace Group5FinalProject
                 for (int j = 0; j < CurrentMap[i].Length; j++)
                 {
                     if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Black); }
-                    if (CurrentMap[i][j] == '_') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Blue); }
+                    if (CurrentMap[i][j] == '_') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkBlue); }
                     
                     if (CurrentMap[i][j] == 'F') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Yellow); }
                     if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkGreen); }
@@ -86,7 +90,7 @@ namespace Group5FinalProject
                 }
             }
 
-            spriteBatch.Draw(GameReference.fallbackTexture, player.Position * 64 + (camera.Position * -64), Color.Green);
+            spriteBatch.Draw(GameReference.fallbackTexture, player.Position * 64 + (camera.Position * -64), Color.LimeGreen);
         }
 
 		public void SetPlayerReference(Player player)
@@ -162,7 +166,18 @@ namespace Group5FinalProject
 				"#P_______#",
 				"##########"
 			});
-
-		}
+            Maps.Add(new string[]
+{
+                "######################",
+                "#P___#__________E____#",
+                "#____#______E________#",
+                "#________##########__#",
+                "#________#________#__#",
+                "##########____##__#__#",
+                "#__F________E________#",
+                "#____##__________#####",
+                "######################",
+});
+        }
 	}
 }
