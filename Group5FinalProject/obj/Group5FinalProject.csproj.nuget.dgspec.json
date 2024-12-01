@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Group5Project\\Group5FinalProject\\Group5FinalProject.csproj": {}
+    "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Group5FinalProject.csproj": {}
   },
   "projects": {
-    "C:\\Group5Project\\Group5FinalProject\\Group5FinalProject.csproj": {
+    "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Group5FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Group5Project\\Group5FinalProject\\Group5FinalProject.csproj",
+        "projectUniqueName": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Group5FinalProject.csproj",
         "projectName": "Group5FinalProject",
-        "projectPath": "C:\\Group5Project\\Group5FinalProject\\Group5FinalProject.csproj",
-        "packagesPath": "C:\\Users\\datys\\.nuget\\packages\\",
-        "outputPath": "C:\\Group5Project\\Group5FinalProject\\obj\\",
+        "projectPath": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Group5FinalProject.csproj",
+        "packagesPath": "C:\\Users\\Meeran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\datys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Meeran\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,9 +39,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -76,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

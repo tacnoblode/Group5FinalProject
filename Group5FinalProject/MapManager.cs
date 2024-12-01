@@ -12,6 +12,7 @@ namespace Group5FinalProject
         Game1 GameReference;
         Player player;
         Camera camera;
+        double timeSinceLastEnemyUpdate;
 
         // The list of all the maps
         List<string[]> Maps = new List<string[]>();
@@ -29,6 +30,8 @@ namespace Group5FinalProject
 
         public void LoadMap(int mapIndex)
         {
+            AllEnemies = new List<Enemy>();
+
             // Reset the score
             GameReference.gameScore = 0;
 
@@ -64,6 +67,14 @@ namespace Group5FinalProject
 
         public void RenderMap(SpriteBatch spriteBatch)
         {
+            if (GameReference.SecondsElapsed > timeSinceLastEnemyUpdate)
+            {
+                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.1;
+                foreach (Enemy enemy in AllEnemies)
+                {
+                    enemy.MoveEnemy();
+                }
+            }
             // Map Rendering
             for (int i = 0; i < CurrentMap.Count; i++)
             {
