@@ -69,7 +69,7 @@ namespace Group5FinalProject
         {
             if (GameReference.SecondsElapsed > timeSinceLastEnemyUpdate)
             {
-                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.1;
+                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.5;
                 foreach (Enemy enemy in AllEnemies)
                 {
                     enemy.MoveEnemy();

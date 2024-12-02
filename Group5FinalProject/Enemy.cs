@@ -14,10 +14,9 @@ namespace Group5FinalProject
         public Vector2 Rotation = Vector2.Zero;
         public bool isEnemyActive = true;
 
-        private int enemyMoveCounter = 0;
         private Random enemyMoveRandom = new Random();
 
-        // position =+ 1 * rotation
+
         // ROTATION will represent which axis the enemy moves.
         // (-1,0) - Enemy will move LEFT on the screen
         // (1,0) - Enemy will move RIGHT on the screen
@@ -33,18 +32,20 @@ namespace Group5FinalProject
 
         public void MoveEnemy()
         {
-            enemyMoveCounter++;
-            if (enemyMoveCounter < 7)
-                return;
-
-            enemyMoveCounter = 0;
-
             if (Rotation == Vector2.Zero) { Rotation = new Vector2(0, 1); }
 
+            // calculates enemy next postion based on it's position and rotation
             Vector2 enemyNextPosition = Position + Rotation;
+
+            // gets object located at the enemy's next position on the map
             char objectInPath = MapManager.GetObjectAtCoordinate(enemyNextPosition);
 
+            // rotates enemy randomly if next object in path is a wall or previous player location, otherwise updates position to next position
             if (objectInPath == '#')
+            {
+                RotateEnemyRandomly();
+            }
+            else if (objectInPath == 'p') 
             {
                 RotateEnemyRandomly();
             }
@@ -62,6 +63,7 @@ namespace Group5FinalProject
 
         private void RotateEnemyRandomly()
         {
+            // Switch case for the 4 directions the enemy will choose from to move randomly
             int moveRandomDirection = enemyMoveRandom.Next(4);
             switch (moveRandomDirection)
             {
