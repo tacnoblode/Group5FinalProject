@@ -54,3 +54,9 @@ C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\
 C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
 C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
 C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb

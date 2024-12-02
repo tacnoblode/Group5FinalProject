@@ -73,11 +73,11 @@ namespace Group5FinalProject
             {
                 for (int j = 0; j < CurrentMap[i].Length; j++)
                 {
-                    if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Black); }
-                    if (CurrentMap[i][j] == '_') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkBlue); }
+                    if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.White); }
+                    if (CurrentMap[i][j] == '_' || CurrentMap[i][j] == 'E') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Gray); }
                     
                     if (CurrentMap[i][j] == 'F') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Yellow); }
-                    if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkGreen); }
+                    if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), new Color(64, 64, 64)); }
                 }
             }
 
@@ -86,11 +86,13 @@ namespace Group5FinalProject
             {
                 if (enemy.isEnemyActive)
                 {
-                    spriteBatch.Draw(GameReference.fallbackTexture, enemy.Position * 64 + (camera.Position * -64), Color.Red);
+                    spriteBatch.Draw(GameReference.spr_Enemy0, enemy.Position * 64 + (camera.Position * -64), Color.White);
                 }
             }
 
-            spriteBatch.Draw(GameReference.fallbackTexture, player.Position * 64 + (camera.Position * -64), Color.LimeGreen);
+
+            if (player.PickaxeSwing) { spriteBatch.Draw(GameReference.spr_Player0, player.Position * 64 + (camera.Position * -64), Color.White); }
+            else { spriteBatch.Draw(GameReference.spr_Player1, player.Position * 64 + (camera.Position * -64), Color.White); }
         }
 
 		public void SetPlayerReference(Player player)
@@ -174,8 +176,8 @@ namespace Group5FinalProject
                 "#________##########__#",
                 "#________#________#__#",
                 "##########____##__#__#",
-                "#__F________E________#",
-                "#____##__________#####",
+                "#__F________E_____#__#",
+                "#____##______________#",
                 "######################",
 });
         }

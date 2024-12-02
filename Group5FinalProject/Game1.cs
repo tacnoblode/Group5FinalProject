@@ -38,6 +38,13 @@ namespace Group5FinalProject
         public SpriteFont defaultFont;
         public Texture2D fallbackTexture;
 
+        public Texture2D spr_Player0;
+        public Texture2D spr_Player1;
+        public Texture2D spr_Enemy0;
+        public Texture2D spr_Enemy1;
+        public Texture2D spr_Rock;
+        public Texture2D spr_Ground;
+
 
         // Objects
 
@@ -73,6 +80,13 @@ namespace Group5FinalProject
             // Fonts and Sprites
             defaultFont = Content.Load<SpriteFont>("DefaultFont");
             fallbackTexture = Content.Load<Texture2D>("WhiteBlock");
+
+            spr_Enemy0 = Content.Load<Texture2D>("Sprites/Enemy0");
+            spr_Enemy1 = Content.Load<Texture2D>("Sprites/Enemy1");
+            spr_Ground = Content.Load<Texture2D>("Sprites/Floor");
+            spr_Rock = Content.Load<Texture2D>("Sprites/Rocks");
+            spr_Player0 = Content.Load<Texture2D>("Sprites/Player0");
+            spr_Player1 = Content.Load<Texture2D>("Sprites/Player1");
         }
 
         protected override void Update(GameTime gameTime)

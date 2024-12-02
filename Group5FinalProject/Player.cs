@@ -19,6 +19,7 @@ namespace Group5FinalProject
 
 		// List of objects to collide with
 		char[] objectsToCollideWith = {'#','p','X'};
+		public bool PickaxeSwing = false;
 
 
 		public Player(Vector2 position, Game1 gameRef, MapManager mapManager, Camera camera)
@@ -38,11 +39,11 @@ namespace Group5FinalProject
 
 			if (!IsKeyAlreadyPressed)
 			{
-				if (Keyboard.GetState().IsKeyDown(Keys.Left) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(-1, 0)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.X -= 1; IsKeyAlreadyPressed = true; }
-				if (Keyboard.GetState().IsKeyDown(Keys.Right) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(1, 0)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.X += 1; IsKeyAlreadyPressed = true; }
-				if (Keyboard.GetState().IsKeyDown(Keys.Up) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, -1)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.Y -= 1; IsKeyAlreadyPressed = true; }
-				if (Keyboard.GetState().IsKeyDown(Keys.Down) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, 1)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.Y += 1; IsKeyAlreadyPressed = true; }
-			}
+				if (Keyboard.GetState().IsKeyDown(Keys.Left) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(-1, 0)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.X -= 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
+				if (Keyboard.GetState().IsKeyDown(Keys.Right) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(1, 0)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.X += 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
+				if (Keyboard.GetState().IsKeyDown(Keys.Up) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, -1)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.Y -= 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
+                if (Keyboard.GetState().IsKeyDown(Keys.Down) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, 1)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.Y += 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
+            }
 			else
 			{
 				if (!Keyboard.GetState().IsKeyDown(Keys.Left) && !Keyboard.GetState().IsKeyDown(Keys.Right) && !Keyboard.GetState().IsKeyDown(Keys.Up) && !Keyboard.GetState().IsKeyDown(Keys.Down))

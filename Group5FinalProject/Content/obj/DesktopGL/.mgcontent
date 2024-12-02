@@ -5,9 +5,21 @@
   <Config />
   <SourceFiles>
     <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/DefaultFont.spritefont</File>
+    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/Sprites/Enemy0.png</File>
+    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/Sprites/Enemy1.png</File>
+    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/Sprites/Floor.png</File>
+    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/Sprites/Player0.png</File>
+    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/Sprites/Player1.png</File>
+    <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/Sprites/Rocks.png</File>
     <File>C:/PROG2370 - Game Prog/Final Project/Group5FinalProject/Group5FinalProject/Content/WhiteBlock.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
