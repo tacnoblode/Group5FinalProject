@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.CSharp;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Group5FinalProject
 {
@@ -45,6 +46,10 @@ namespace Group5FinalProject
         public Texture2D spr_Rock;
         public Texture2D spr_Ground;
 
+        public SoundEffect snd_EnemyMove;
+        public SoundEffect snd_InvalidMove;
+        public SoundEffect snd_Mine;
+        public SoundEffect snd_EndLevel;
 
         // Objects
 
@@ -87,6 +92,11 @@ namespace Group5FinalProject
             spr_Rock = Content.Load<Texture2D>("Sprites/Rocks");
             spr_Player0 = Content.Load<Texture2D>("Sprites/Player0");
             spr_Player1 = Content.Load<Texture2D>("Sprites/Player1");
+
+            snd_EndLevel = Content.Load<SoundEffect>("Audio/EndLevel");
+            snd_EnemyMove = Content.Load<SoundEffect>("Audio/EnemyMove");
+            snd_InvalidMove = Content.Load<SoundEffect>("Audio/invalidMove");
+            snd_Mine = Content.Load<SoundEffect>("Audio/Mine");
         }
 
         protected override void Update(GameTime gameTime)

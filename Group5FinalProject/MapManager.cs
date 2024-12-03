@@ -12,6 +12,7 @@ namespace Group5FinalProject
         Game1 GameReference;
         Player player;
         Camera camera;
+        double timeSinceLastEnemyUpdate;
 
         // The list of all the maps
         List<string[]> Maps = new List<string[]>();
@@ -48,13 +49,13 @@ namespace Group5FinalProject
                             // If an enemy is found in the loading process, create a new enemy object
                             // and change the line to be a blank character.
                             AllEnemies.Add(new Enemy(GameReference, this, new Vector2(j, i)));
-                            MapLine += "-";
+                            MapLine += '_';
                         }
                         else if (Maps[mapIndex][i][j] == 'P')
                         {
                             // If a player spawn is found, set the player's position to it, and change the line to be blank
                             player.Position = new Vector2(j, i);
-                            MapLine += "-";
+                            MapLine += '_';
                         }
                         else
                         {
@@ -68,6 +69,15 @@ namespace Group5FinalProject
 
         public void RenderMap(SpriteBatch spriteBatch)
         {
+            if (GameReference.SecondsElapsed > timeSinceLastEnemyUpdate)
+            {
+                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.5;
+                foreach (Enemy enemy in AllEnemies)
+                {
+                    enemy.MoveEnemy();
+                }
+            }
+
             // Map Rendering
             for (int i = 0; i < CurrentMap.Count; i++)
             {
@@ -86,7 +96,8 @@ namespace Group5FinalProject
             {
                 if (enemy.isEnemyActive)
                 {
-                    spriteBatch.Draw(GameReference.spr_Enemy0, enemy.Position * 64 + (camera.Position * -64), Color.White);
+                    if (enemy.enemyWalkFrame) { spriteBatch.Draw(GameReference.spr_Enemy0, enemy.Position * 64 + (camera.Position * -64), Color.White); }
+                    else { spriteBatch.Draw(GameReference.spr_Enemy1, enemy.Position * 64 + (camera.Position * -64), Color.White); }
                 }
             }
 
@@ -155,18 +166,25 @@ namespace Group5FinalProject
 		// P - Player spawn point
 		// F - Level End Flag
         // p - The previous positions the player were in
+        // v - Void (this character is only to add a space, it will render as black ingame
 
 		public void LoadMapDatabase()
 		{
 			// Place your maps in one of these functions to add them into the list
 			Maps.Add(new string[]
 			{
-				"##############",
-				"#_E__#_______#",
-				"#____#___#__F#",
-				"#____###_#####",
-				"#P_______#",
-				"##########"
+				"###################",
+				"#_P__#___E________#",
+				"#____#___##__#____#",
+				"#____#_______###__#",
+				"##__#######__#____#",
+				"v#__#_E___#__#__###",
+				"v#__#___E____#____#",
+				"v#__#________#___F#",
+				"##__#######_####__#",
+				"#____________E_####",
+				"#####__###_____#vv",
+				"vvvv####v#######vv"
 			});
             Maps.Add(new string[]
 {

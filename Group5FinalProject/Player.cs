@@ -16,10 +16,16 @@ namespace Group5FinalProject
 		// Control Variables
 		public Vector2 Position;
 		bool IsKeyAlreadyPressed = false;
+        private Random playerRNG = new Random();
 
-		// List of objects to collide with
-		char[] objectsToCollideWith = {'#','p','X'};
+        // List of objects to collide with
+        char[] objectsToCollideWith = {'#','p','X'};
+
+		// Animation and Sound Controls
 		public bool PickaxeSwing = false;
+		public bool Moved = false;
+
+
 
 
 		public Player(Vector2 position, Game1 gameRef, MapManager mapManager, Camera camera)
@@ -29,25 +35,52 @@ namespace Group5FinalProject
 			GameReference = gameRef;
 			Camera = camera;
 		}
-
+		public void UpdateMoveState()
+		{
+            MapManager.ReplaceObjectAtPositionWith(Position, 'p');
+            IsKeyAlreadyPressed = true;
+            Moved = true;
+            PickaxeSwing = !PickaxeSwing;
+			GameReference.snd_Mine.Play();
+        }
 		public void DoInputLogic()
 		{
 			// Actual input logic here
 
 			// If R key is pressed, reset the level.
 			if (Keyboard.GetState().IsKeyDown(Keys.R)) { MapManager.LoadMap(GameReference.levelId); }
-
-			if (!IsKeyAlreadyPressed)
+            if (!IsKeyAlreadyPressed)
 			{
-				if (Keyboard.GetState().IsKeyDown(Keys.Left) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(-1, 0)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.X -= 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
-				if (Keyboard.GetState().IsKeyDown(Keys.Right) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(1, 0)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.X += 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
-				if (Keyboard.GetState().IsKeyDown(Keys.Up) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, -1)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.Y -= 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
-                if (Keyboard.GetState().IsKeyDown(Keys.Down) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, 1)))) { MapManager.ReplaceObjectAtPositionWith(Position, 'p'); Position.Y += 1; IsKeyAlreadyPressed = true; PickaxeSwing = !PickaxeSwing; }
+                if (Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.Up) || Keyboard.GetState().IsKeyDown(Keys.Down))
+				{
+					IsKeyAlreadyPressed = true; 
+				}
+
+                if (Keyboard.GetState().IsKeyDown(Keys.Left) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(-1, 0)))) {
+                    UpdateMoveState();
+                    Position.X -= 1;
+				}
+				if (Keyboard.GetState().IsKeyDown(Keys.Right) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(1, 0)))) {
+                    UpdateMoveState();
+                    Position.X += 1;
+                }
+				if (Keyboard.GetState().IsKeyDown(Keys.Up) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, -1)))) {
+                    UpdateMoveState();
+                    Position.Y -= 1;
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.Down) && !objectsToCollideWith.Contains(MapManager.GetObjectAtCoordinate(Position + new Vector2(0, 1)))) {
+                    UpdateMoveState();
+                    Position.Y += 1;
+                }
             }
 			else
 			{
 				if (!Keyboard.GetState().IsKeyDown(Keys.Left) && !Keyboard.GetState().IsKeyDown(Keys.Right) && !Keyboard.GetState().IsKeyDown(Keys.Up) && !Keyboard.GetState().IsKeyDown(Keys.Down))
-				{IsKeyAlreadyPressed = false; }
+				{
+					IsKeyAlreadyPressed = false;
+                    if (!Moved) { GameReference.snd_InvalidMove.Play(); }
+					Moved = false;
+                }
 			}
 			
 			// Check if the player is overlapping any objects and do logic accordingly
@@ -56,8 +89,9 @@ namespace Group5FinalProject
 				// TODO: Transition into intermisison screen.
 				// TEMP CODE BELOW:
 				GameReference.gameState = 2;
-			}
-			if (MapManager.GetObjectAtCoordinate(Position) == 'E') { MapManager.LoadMap(GameReference.levelId); }
+                GameReference.snd_EndLevel.Play();
+            }
+			if (MapManager.GetObjectAtCoordinate(Position) == 'E') { MapManager.LoadMap(GameReference.levelId); GameReference.snd_InvalidMove.Play(); }
 		}
 	}
 }

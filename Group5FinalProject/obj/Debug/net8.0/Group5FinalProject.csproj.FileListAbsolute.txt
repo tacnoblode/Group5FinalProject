@@ -60,3 +60,13 @@ C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\
 C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
 C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
 C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EndLevel.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EnemyMove.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\invalidMove.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\Mine.xnb
