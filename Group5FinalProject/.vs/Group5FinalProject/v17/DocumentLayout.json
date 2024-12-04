@@ -82,8 +82,7 @@
               "RelativeToolTip": "IntermissionScreenManager.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCIAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:44:46.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T17:44:46.744Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "TitleScreenManager.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowCIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:30:05.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T17:30:05.002Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "Game1.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAIwGIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T23:12:37.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T23:12:37.676Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "Player.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T15:22:05.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T15:22:05.765Z"
             },
             {
               "$type": "Document",
@@ -146,8 +142,7 @@
               "RelativeToolTip": "Enemy.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAswB8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T14:08:46.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T14:08:46.982Z"
             },
             {
               "$type": "Document",
@@ -157,7 +152,7 @@
               "RelativeDocumentMoniker": "MapManager.cs",
               "ToolTip": "C:\\Group5Project\\Group5FinalProject\\MapManager.cs",
               "RelativeToolTip": "MapManager.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAqwLoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAqwLoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T00:12:41.489Z",
               "EditorCaption": ""
@@ -183,8 +178,7 @@
               "RelativeToolTip": "Content\\Content.mgcb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-20T23:32:09.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T23:32:09.402Z"
             },
             {
               "$type": "Document",
@@ -196,8 +190,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T23:12:33.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T23:12:33.993Z"
             }
           ]
         }
