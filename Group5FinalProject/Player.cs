@@ -42,6 +42,7 @@ namespace Group5FinalProject
             Moved = true;
             PickaxeSwing = !PickaxeSwing;
 			GameReference.snd_Mine.Play();
+            GameReference.gameScore++;
         }
 		public void DoInputLogic()
 		{

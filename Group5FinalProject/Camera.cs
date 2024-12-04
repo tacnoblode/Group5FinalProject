@@ -39,11 +39,9 @@ namespace Group5FinalProject
 
         public void DrawUIOnScreen(SpriteBatch _spriteBatch)
         {
-            // Ensure the SpriteBatch is started before calling this
             _spriteBatch.DrawString(GameReference.defaultFont, $"Score: {GameReference.gameScore}", new Vector2(10, 10), Color.White);
-            _spriteBatch.DrawString(GameReference.defaultFont, $"Level: {GameReference.levelId}", new Vector2(10, 40), Color.White);
-            _spriteBatch.DrawString(GameReference.defaultFont, $"Time: {GameReference.SecondsElapsed} seconds", new Vector2(10, 70), Color.White);
-            // Optional: Add instructions for restarting
+            _spriteBatch.DrawString(GameReference.defaultFont, $"Level: {GameReference.levelId+1}", new Vector2(10, 40), Color.White);
+            _spriteBatch.DrawString(GameReference.defaultFont, $"Time: {(int)GameReference.SecondsElapsed} s", new Vector2(10, 70), Color.White);
             _spriteBatch.DrawString(GameReference.defaultFont, "Press R to restart level", new Vector2(10, 100), Color.White);
         }
     }
