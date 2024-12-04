@@ -1,0 +1,13 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Group5Project/Group5FinalProject/Content/Audio/EndLevel.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Audio/EndLevel.xnb","SoundEffectProcessor","SoundEffectContent",22991,23052,0.4427287
+"C:/Group5Project/Group5FinalProject/Content/Audio/EnemyMove.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Audio/EnemyMove.xnb","SoundEffectProcessor","SoundEffectContent",4466,4527,0.125427
+"C:/Group5Project/Group5FinalProject/Content/Audio/invalidMove.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Audio/invalidMove.xnb","SoundEffectProcessor","SoundEffectContent",4462,4523,0.1333102
+"C:/Group5Project/Group5FinalProject/Content/Audio/Mine.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Audio/Mine.xnb","SoundEffectProcessor","SoundEffectContent",2450,2511,0.1274664
+"C:/Group5Project/Group5FinalProject/Content/DefaultFont.spritefont","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/DefaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.1018991
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Enemy0.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Sprites/Enemy0.xnb","TextureProcessor","Texture2DContent",964,16469,0.0132823
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Enemy1.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Sprites/Enemy1.xnb","TextureProcessor","Texture2DContent",968,16469,0.0036076
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Floor.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Sprites/Floor.xnb","TextureProcessor","Texture2DContent",6515,16469,0.006548
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Player0.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Sprites/Player0.xnb","TextureProcessor","Texture2DContent",979,16469,0.0025887
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Player1.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Sprites/Player1.xnb","TextureProcessor","Texture2DContent",921,16469,0.0025547
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Rocks.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Sprites/Rocks.xnb","TextureProcessor","Texture2DContent",729,16469,0.0043142
+"C:/Group5Project/Group5FinalProject/Content/WhiteBlock.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/WhiteBlock.xnb","TextureProcessor","Texture2DContent",232,16469,0.0024441
