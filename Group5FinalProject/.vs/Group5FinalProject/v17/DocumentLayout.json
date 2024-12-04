@@ -3,12 +3,33 @@
   "WorkspaceRootPath": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\users\\meeran\\desktop\\game prog final project\\meeran branch\\group5finalproject\\group5finalproject\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\users\\meeran\\desktop\\game prog final project\\meeran branch\\group5finalproject\\group5finalproject\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\intermissionscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:intermissionscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\titlescreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:titlescreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
     },
     {
       "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\users\\meeran\\desktop\\game prog final project\\meeran branch\\group5finalproject\\group5finalproject\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,6 +40,7 @@
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\users\\meeran\\desktop\\game prog final project\\meeran branch\\group5finalproject\\group5finalproject\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -32,6 +54,13 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\users\\meeran\\desktop\\game prog final project\\meeran branch\\group5finalproject\\group5finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|c:\\group5project\\group5finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
       "RelativeMoniker": "D:0:0:{95213CED-C91F-40CA-BF4A-4F08A1BEF2EE}|Group5FinalProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,36 +71,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 10,
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 3,
+              "Title": "IntermissionScreenManager.cs",
+              "DocumentMoniker": "C:\\Group5Project\\Group5FinalProject\\IntermissionScreenManager.cs",
+              "RelativeDocumentMoniker": "IntermissionScreenManager.cs",
+              "ToolTip": "C:\\Group5Project\\Group5FinalProject\\IntermissionScreenManager.cs",
+              "RelativeToolTip": "IntermissionScreenManager.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T17:44:46.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Title": "TitleScreenManager.cs",
               "DocumentMoniker": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\TitleScreenManager.cs",
               "RelativeDocumentMoniker": "TitleScreenManager.cs",
               "ToolTip": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\TitleScreenManager.cs",
               "RelativeToolTip": "TitleScreenManager.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAcAAAAAAAAAAAAwwBoAAABAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAA/AAAAAAAAAA==",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T17:30:05.002Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 6,
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
               "ToolTip": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Game1.cs",
               "RelativeToolTip": "Game1.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwGkAAAA3AAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAIUAAAAAAAAAAAAcwCEAAAARAAAAAAAAAA==",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T23:12:37.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T23:12:37.676Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+<<<<<<< HEAD
               "Title": "IntermissionScreenManager.cs",
               "DocumentMoniker": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\IntermissionScreenManager.cs",
               "RelativeDocumentMoniker": "IntermissionScreenManager.cs",
@@ -84,15 +145,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Player.cs",
               "RelativeToolTip": "Player.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABMAAAAAAAAAAAAawCwAAAAmAAAAAAAAAA==",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T15:22:05.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T15:22:05.765Z"
             },
             {
               "$type": "Document",
@@ -102,10 +168,13 @@
               "RelativeDocumentMoniker": "Camera.cs",
               "ToolTip": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Camera.cs",
               "RelativeToolTip": "Camera.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAABVAAAAAAAAAA==",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:09:00.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T00:09:00.46Z"
             },
             {
               "$type": "Document",
@@ -115,7 +184,11 @@
               "RelativeDocumentMoniker": "Enemy.cs",
               "ToolTip": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\Enemy.cs",
               "RelativeToolTip": "Enemy.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBsAAAAqAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwB8AAAA2AAAAAAAAAA==",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T14:08:46.982Z",
               "EditorCaption": ""
@@ -128,7 +201,11 @@
               "RelativeDocumentMoniker": "MapManager.cs",
               "ToolTip": "C:\\Users\\Meeran\\Desktop\\Game Prog Final Project\\Meeran Branch\\Group5FinalProject\\Group5FinalProject\\MapManager.cs",
               "RelativeToolTip": "MapManager.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAIYAAAAAAAAAAAAiwKEAAAA4AAAAAAAAAA==",
+=======
+              "ViewState": "AgIAALQAAAAAAAAAAAAqwOMAAAApAAAAAAAAAA==",
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T00:12:41.489Z",
               "EditorCaption": ""
@@ -144,6 +221,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T23:12:33.993Z"
+<<<<<<< HEAD
             }
           ]
         },
@@ -164,6 +242,8 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+=======
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
             }
           ]
         }

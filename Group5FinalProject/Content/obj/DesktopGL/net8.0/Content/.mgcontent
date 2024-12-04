@@ -4,10 +4,35 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/Meeran/Desktop/Game Prog Final Project/Meeran Branch/Group5FinalProject/Group5FinalProject/Content/DefaultFont.spritefont</File>
     <File>C:/Users/Meeran/Desktop/Game Prog Final Project/Meeran Branch/Group5FinalProject/Group5FinalProject/Content/WhiteBlock.png</File>
+=======
+    <File>C:/Group5Project/Group5FinalProject/Content/Audio/EndLevel.wav</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Audio/EnemyMove.wav</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Audio/invalidMove.wav</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Audio/Mine.wav</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/DefaultFont.spritefont</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Sprites/Enemy0.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Sprites/Enemy1.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Sprites/Floor.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Sprites/Player0.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Sprites/Player1.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/Sprites/Rocks.png</File>
+    <File>C:/Group5Project/Group5FinalProject/Content/WhiteBlock.png</File>
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

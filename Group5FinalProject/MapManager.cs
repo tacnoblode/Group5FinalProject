@@ -38,30 +38,34 @@ namespace Group5FinalProject
             // This function loads whichever map specified into memory.
 
             CurrentMap = new List<string>();
-            for (int i = 0; i < Maps[mapIndex].Length; i++)
+            AllEnemies = new List<Enemy>();
+            if (Maps.Count > mapIndex)
             {
-                string MapLine = "";
-                for (int j = 0; j < Maps[mapIndex][i].Length; j++)
+                for (int i = 0; i < Maps[mapIndex].Length; i++)
                 {
-                    if (Maps[mapIndex][i][j] == 'E')
+                    string MapLine = "";
+                    for (int j = 0; j < Maps[mapIndex][i].Length; j++)
                     {
-                        // If an enemy is found in the loading process, create a new enemy object
-                        // and change the line to be a blank character.
-                        AllEnemies.Add(new Enemy(GameReference, this, new Vector2(j, i)));
-                        MapLine += "-";
-					}
-					else if (Maps[mapIndex][i][j] == 'P')
-					{
-                        // If a player spawn is found, set the player's position to it, and change the line to be blank
-                        player.Position = new Vector2(j, i);
-						MapLine += "-";
-					}
-					else
-                    {
-						MapLine += Maps[mapIndex][i][j];
-					}
+                        if (Maps[mapIndex][i][j] == 'E')
+                        {
+                            // If an enemy is found in the loading process, create a new enemy object
+                            // and change the line to be a blank character.
+                            AllEnemies.Add(new Enemy(GameReference, this, new Vector2(j, i)));
+                            MapLine += '_';
+                        }
+                        else if (Maps[mapIndex][i][j] == 'P')
+                        {
+                            // If a player spawn is found, set the player's position to it, and change the line to be blank
+                            player.Position = new Vector2(j, i);
+                            MapLine += '_';
+                        }
+                        else
+                        {
+                            MapLine += Maps[mapIndex][i][j];
+                        }
+                    }
+                    CurrentMap.Add(MapLine);
                 }
-                CurrentMap.Add(MapLine);
             }
         }
 
@@ -75,16 +79,20 @@ namespace Group5FinalProject
                     enemy.MoveEnemy();
                 }
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
             // Map Rendering
             for (int i = 0; i < CurrentMap.Count; i++)
             {
                 for (int j = 0; j < CurrentMap[i].Length; j++)
                 {
-                    if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Black); }
-                    if (CurrentMap[i][j] == '_') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Blue); }
+                    if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.White); }
+                    if (CurrentMap[i][j] == '_' || CurrentMap[i][j] == 'E') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Gray); }
                     
                     if (CurrentMap[i][j] == 'F') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Yellow); }
-                    if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.DarkGreen); }
+                    if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), new Color(64, 64, 64)); }
                 }
             }
 
@@ -93,11 +101,14 @@ namespace Group5FinalProject
             {
                 if (enemy.isEnemyActive)
                 {
-                    spriteBatch.Draw(GameReference.fallbackTexture, enemy.Position * 64 + (camera.Position * -64), Color.Red);
+                    if (enemy.enemyWalkFrame) { spriteBatch.Draw(GameReference.spr_Enemy0, enemy.Position * 64 + (camera.Position * -64), Color.White); }
+                    else { spriteBatch.Draw(GameReference.spr_Enemy1, enemy.Position * 64 + (camera.Position * -64), Color.White); }
                 }
             }
 
-            spriteBatch.Draw(GameReference.fallbackTexture, player.Position * 64 + (camera.Position * -64), Color.Green);
+
+            if (player.PickaxeSwing) { spriteBatch.Draw(GameReference.spr_Player0, player.Position * 64 + (camera.Position * -64), Color.White); }
+            else { spriteBatch.Draw(GameReference.spr_Player1, player.Position * 64 + (camera.Position * -64), Color.White); }
         }
 
 		public void SetPlayerReference(Player player)
@@ -160,20 +171,67 @@ namespace Group5FinalProject
 		// P - Player spawn point
 		// F - Level End Flag
         // p - The previous positions the player were in
+        // v - Void (this character is only to add a space, it will render as black ingame
 
 		public void LoadMapDatabase()
 		{
 			// Place your maps in one of these functions to add them into the list
 			Maps.Add(new string[]
 			{
-				"##############",
-				"#_E__#_______#",
-				"#____#___#__F#",
-				"#____###_#####",
-				"#P_______#",
-				"##########"
+				"###################",
+				"#_P__#___E________#",
+				"#____#___##__#____#",
+				"#____#_______###__#",
+				"##__#######__#____#",
+				"v#__#_E___#__#__###",
+				"v#__#___E____#____#",
+				"v#__#________#___F#",
+				"##__#######_####__#",
+				"#____________E_####",
+				"#####__###_____#vv",
+				"vvvv####v#######vv"
 			});
-
-		}
-	}
+            Maps.Add(new string[]
+            {
+                "######################",
+                "#P___#__________E____#",
+                "#____#______E________#",
+                "#________##########__#",
+                "#________#________#__#",
+                "##########____##__#__#",
+                "#__F________E_____#__#",
+                "#____##______________#",
+                "######################",
+            });
+            Maps.Add(new string[]
+            {
+                "######################",
+                "#P___________#_______#",
+                "#____#####____E______#",
+                "#____#___#____#####_##",
+                "#__E_#___#___________#",
+                "#####___###########__#",
+                "#____________________#",
+                "#____E_______#____####",
+                "#F_______#####_______#",
+                "######################"
+            });
+            Maps.Add(new string[]
+{
+                "########################",
+                "#P_______E#F___________#",
+                "#____E____#______E_____#",
+                "#_________#______E_____#",
+                "######____######_______#",
+                "#____E____#____________#",
+                "#_________#_______######",
+                "#______#####___________#",
+                "#____#_________E_______#",
+                "#________#___E_________#",
+                "#______________________#",
+                "#_____#____E_____E_____#",
+                "########################"
+            });
+        }
+    }
 }

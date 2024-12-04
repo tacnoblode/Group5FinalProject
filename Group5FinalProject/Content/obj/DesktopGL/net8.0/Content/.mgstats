@@ -1,3 +1,18 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+<<<<<<< HEAD
 "C:/Users/Meeran/Desktop/Game Prog Final Project/Meeran Branch/Group5FinalProject/Group5FinalProject/Content/DefaultFont.spritefont","C:/Users/Meeran/Desktop/Game Prog Final Project/Meeran Branch/Group5FinalProject/Group5FinalProject/Content/bin/DesktopGL/Content/DefaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.2261067
 "C:/Users/Meeran/Desktop/Game Prog Final Project/Meeran Branch/Group5FinalProject/Group5FinalProject/Content/WhiteBlock.png","C:/Users/Meeran/Desktop/Game Prog Final Project/Meeran Branch/Group5FinalProject/Group5FinalProject/Content/bin/DesktopGL/Content/WhiteBlock.xnb","TextureProcessor","Texture2DContent",232,16469,0.0310296
+=======
+"C:/Group5Project/Group5FinalProject/Content/Audio/EndLevel.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Audio/EndLevel.xnb","SoundEffectProcessor","SoundEffectContent",22991,23052,0.2419902
+"C:/Group5Project/Group5FinalProject/Content/Audio/EnemyMove.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Audio/EnemyMove.xnb","SoundEffectProcessor","SoundEffectContent",4466,4527,0.1208092
+"C:/Group5Project/Group5FinalProject/Content/Audio/invalidMove.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Audio/invalidMove.xnb","SoundEffectProcessor","SoundEffectContent",4462,4523,0.1244267
+"C:/Group5Project/Group5FinalProject/Content/Audio/Mine.wav","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Audio/Mine.xnb","SoundEffectProcessor","SoundEffectContent",2450,2511,0.1290832
+"C:/Group5Project/Group5FinalProject/Content/DefaultFont.spritefont","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/DefaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.1040347
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Enemy0.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Sprites/Enemy0.xnb","TextureProcessor","Texture2DContent",964,16469,0.0135468
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Enemy1.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Sprites/Enemy1.xnb","TextureProcessor","Texture2DContent",968,16469,0.0050107
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Floor.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Sprites/Floor.xnb","TextureProcessor","Texture2DContent",6515,16469,0.0074472
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Player0.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Sprites/Player0.xnb","TextureProcessor","Texture2DContent",979,16469,0.0041257
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Player1.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Sprites/Player1.xnb","TextureProcessor","Texture2DContent",921,16469,0.0037462
+"C:/Group5Project/Group5FinalProject/Content/Sprites/Rocks.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/Sprites/Rocks.xnb","TextureProcessor","Texture2DContent",729,16469,0.0056104
+"C:/Group5Project/Group5FinalProject/Content/WhiteBlock.png","C:/Group5Project/Group5FinalProject/Content/bin/DesktopGL/Content/WhiteBlock.xnb","TextureProcessor","Texture2DContent",232,16469,0.0034466
+>>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
