@@ -1,5 +1,8 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using static System.Formats.Asn1.AsnWriter;
+using static System.Net.Mime.MediaTypeNames;
+using System.Reflection.Emit;
 
 namespace Group5FinalProject
 {
@@ -32,11 +35,14 @@ namespace Group5FinalProject
 			Position += ((TempPosition + new Vector2(-6, -3)) - Position) * 1.15f;
 		}
 
-		// Don't worry about any of the code above, it's just the UI that we need to worry about.
+        // Don't worry about any of the code above, it's just the UI that we need to worry about.
 
-		public void DrawUIOnScreen(SpriteBatch _spriteBatch)
-		{
-			// TODO: Draw the UI (Text that shows the player's score, the time spent in the level, and what level # the player is on.)
-		}
-	}
+        public void DrawUIOnScreen(SpriteBatch _spriteBatch)
+        {
+            _spriteBatch.DrawString(GameReference.defaultFont, $"Score: {GameReference.gameScore}", new Vector2(10, 10), Color.White);
+            _spriteBatch.DrawString(GameReference.defaultFont, $"Level: {GameReference.levelId+1}", new Vector2(10, 40), Color.White);
+            _spriteBatch.DrawString(GameReference.defaultFont, $"Time: {(int)GameReference.SecondsElapsed} s", new Vector2(10, 70), Color.White);
+            _spriteBatch.DrawString(GameReference.defaultFont, "Press R to restart level", new Vector2(10, 100), Color.White);
+        }
+    }
 }
