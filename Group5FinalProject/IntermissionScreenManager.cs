@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
+using System.Linq;
+using System;
+using System.Diagnostics;
 
 namespace Group5FinalProject
 {
@@ -9,6 +12,10 @@ namespace Group5FinalProject
         Game1 GameReference;
         MapManager MapManager;
 
+        public double GetTotalTime()
+        {
+            return MapManager.levelTimes.Values.Sum();
+        }
 
         public IntermissionScreenManager(Game1 gameReference, MapManager mapManager)
         {
@@ -18,52 +25,88 @@ namespace Group5FinalProject
 
         public void IntermissionScreenInputs()
         {
-            // This code is done, this should be okay to leave for now
-
             if (Keyboard.GetState().IsKeyDown(Keys.Enter))
             {
-                // Set the game state to 1 (The main game stage)
-                GameReference.gameState = 1;
-
-                GameReference.levelId += 1;
-                MapManager.LoadMap(GameReference.levelId);
+                if (GameReference.levelId < MapManager.Maps.Count - 1)
+                {
+                    GameReference.levelId += 1; // Increment only if there's a next level
+                    GameReference.gameState = 1;
+                    MapManager.LoadMap(GameReference.levelId);
+                    Debug.WriteLine($"Loading Level {GameReference.levelId}");
+                }
+                else
+                {
+                    // Reset game state to main menu
+                    GameReference.gameState = 0;
+                    GameReference.levelId = 0;
+                    Debug.WriteLine("Game Over.");
+                }
             }
         }
+
         public void DrawIntermissionScreen(SpriteBatch _spriteBatch)
         {
-            // Text configuration
-            string levelCompletedText = "Level Completed!";
-            string totalScoreText = $"Total Score: {GameReference.gameScore}";
-            string nextLevelText = $"Entering Level {GameReference.levelId + 2}...";
-            string continueText = "PRESS ENTER TO CONTINUE";
-            // TODO: Replace the code in this function with the text/graphics for an intermission screen (the screen between advancing to the next level)
-            // INCLUDE: A label showing your total score in the level (from GameReference.gameScore)
-            // INCLUDE: A label telling you what level is next (eg. Entering Level 2...)
-            // INCLUDE: A label that says "Level Completed!" or something similar
-            // INCLUDE: A label that tells the player to press enter to continue.
-
-
             // Center screen positioning
             Vector2 screenCenter = new Vector2(GameReference.viewport.Width / 2, GameReference.viewport.Height / 2);
+            if (GameReference.levelId+1 < MapManager.Maps.Count)
+            {
+                // Text configuration
+                string levelCompletedText = "Level Completed!";
+                string totalScoreText = $"Total Score: {GameReference.gameScore}";
+                string timeLevelText = $"Time for this level: {MapManager.levelFinishTime:F2} seconds";
+                string nextLevelText = $"Entering Level {GameReference.levelId + 2}...";
+                string continueText = "PRESS ENTER TO CONTINUE";
 
-            // Measure the width of each string to center them horizontally
-            Vector2 completedTextSize = GameReference.defaultFont.MeasureString(levelCompletedText);
-            Vector2 scoreTextSize = GameReference.defaultFont.MeasureString(totalScoreText);
-            Vector2 nextLevelTextSize = GameReference.defaultFont.MeasureString(nextLevelText);
-            Vector2 continueTextSize = GameReference.defaultFont.MeasureString(continueText);
+                
 
-            // Positions for text
-            Vector2 completedTextPosition = screenCenter - new Vector2(completedTextSize.X / 2, 100);
-            Vector2 scoreTextPosition = screenCenter - new Vector2(scoreTextSize.X / 2, 50);
-            Vector2 nextLevelTextPosition = screenCenter - new Vector2(nextLevelTextSize.X / 2, 0);
-            Vector2 continueTextPosition = screenCenter - new Vector2(continueTextSize.X / 2, -50);
+                // Measure the width of each string to center them horizontally
+                Vector2 completedTextSize = GameReference.defaultFont.MeasureString(levelCompletedText);
+                Vector2 scoreTextSize = GameReference.defaultFont.MeasureString(totalScoreText);
+                Vector2 timeLevelTextSize = GameReference.defaultFont.MeasureString(timeLevelText);
+                Vector2 nextLevelTextSize = GameReference.defaultFont.MeasureString(nextLevelText);
+                Vector2 continueTextSize = GameReference.defaultFont.MeasureString(continueText);
 
-            // Draw intermission screen text
+                // Positions for text
+                Vector2 completedTextPosition = screenCenter - new Vector2(completedTextSize.X / 2, 120);
+                Vector2 scoreTextPosition = screenCenter - new Vector2(scoreTextSize.X / 2, 70);
+                Vector2 timeLevelTextPosition = screenCenter - new Vector2(timeLevelTextSize.X / 2, 20);
+                Vector2 nextLevelTextPosition = screenCenter - new Vector2(nextLevelTextSize.X / 2, -30);
+                Vector2 continueTextPosition = screenCenter - new Vector2(continueTextSize.X / 2, -80);
 
-            _spriteBatch.DrawString(GameReference.defaultFont, levelCompletedText, completedTextPosition, Color.Yellow);
-            _spriteBatch.DrawString(GameReference.defaultFont, totalScoreText, scoreTextPosition, Color.White);
-            _spriteBatch.DrawString(GameReference.defaultFont, nextLevelText, nextLevelTextPosition, Color.White);
-            _spriteBatch.DrawString(GameReference.defaultFont, continueText, continueTextPosition, Color.White);
+                // Draw intermission screen text
+                _spriteBatch.DrawString(GameReference.defaultFont, levelCompletedText, completedTextPosition, Color.Yellow);
+                _spriteBatch.DrawString(GameReference.defaultFont, totalScoreText, scoreTextPosition, Color.White);
+                _spriteBatch.DrawString(GameReference.defaultFont, timeLevelText, timeLevelTextPosition, Color.White);
+                _spriteBatch.DrawString(GameReference.defaultFont, nextLevelText, nextLevelTextPosition, Color.White);
+                _spriteBatch.DrawString(GameReference.defaultFont, continueText, continueTextPosition, Color.White);
+            }
+            else
+            {
+                // Final screen after the last level
+                string gameOverText = "Congratulations!";
+                string totalScoreText = $"Total Score: {MapManager.levelScores.Values.Sum()}";
+                string totalTimeText = $"Total Time: {MapManager.levelTimes.Values.Sum():F2} seconds";
+                string restartText = "PRESS ENTER TO RESTART";
+
+
+                // Measure string sizes
+                Vector2 gameOverTextSize = GameReference.defaultFont.MeasureString(gameOverText);
+                Vector2 totalScoreTextSize = GameReference.defaultFont.MeasureString(totalScoreText);
+                Vector2 totalTimeTextSize = GameReference.defaultFont.MeasureString(totalTimeText);
+                Vector2 restartTextSize = GameReference.defaultFont.MeasureString(restartText);
+
+                // Positions for text
+                Vector2 gameOverTextPosition = screenCenter - new Vector2(gameOverTextSize.X / 2, 70);
+                Vector2 totalScoreTextPosition = screenCenter - new Vector2(totalScoreTextSize.X / 2, 30);
+                Vector2 totalTimeTextPosition = screenCenter - new Vector2(totalTimeTextSize.X / 2, -10);
+                Vector2 restartTextPosition = screenCenter - new Vector2(restartTextSize.X / 2, -50);
+
+                // Draw text
+                _spriteBatch.DrawString(GameReference.defaultFont, gameOverText, gameOverTextPosition, Color.Red);
+                _spriteBatch.DrawString(GameReference.defaultFont, totalScoreText, totalScoreTextPosition, Color.White);
+                _spriteBatch.DrawString(GameReference.defaultFont, totalTimeText, totalTimeTextPosition, Color.White);
+                _spriteBatch.DrawString(GameReference.defaultFont, restartText, restartTextPosition, Color.Yellow);
+            }
         }
     }
 }

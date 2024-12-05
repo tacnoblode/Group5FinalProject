@@ -25,9 +25,6 @@ namespace Group5FinalProject
 		public bool PickaxeSwing = false;
 		public bool Moved = false;
 
-
-
-
 		public Player(Vector2 position, Game1 gameRef, MapManager mapManager, Camera camera)
 		{
 			Position = position;
@@ -87,9 +84,12 @@ namespace Group5FinalProject
 			// Check if the player is overlapping any objects and do logic accordingly
 			if (MapManager.GetObjectAtCoordinate(Position) == 'F')
 			{
-				// TODO: Transition into intermisison screen.
-				// TEMP CODE BELOW:
 				GameReference.gameState = 2;
+
+				MapManager.levelFinishTime = MapManager.levelElapsedTime;
+				MapManager.levelTimes[GameReference.levelId] = MapManager.levelFinishTime;
+                MapManager.levelScores[GameReference.levelId] = GameReference.gameScore;
+
                 GameReference.snd_EndLevel.Play();
             }
 			if (MapManager.GetObjectAtCoordinate(Position) == 'E') { MapManager.LoadMap(GameReference.levelId); GameReference.snd_InvalidMove.Play(); }

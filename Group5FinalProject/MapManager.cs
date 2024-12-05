@@ -13,9 +13,17 @@ namespace Group5FinalProject
         Player player;
         Camera camera;
         double timeSinceLastEnemyUpdate;
+        
+        public double levelStartTime;
+        public double levelElapsedTime;
+        public double levelFinishTime;
+        public Dictionary<int, double> levelTimes = new Dictionary<int, double>();
+
+        public Dictionary<int, double> levelScores = new Dictionary<int, double>();
+
 
         // The list of all the maps
-        List<string[]> Maps = new List<string[]>();
+        public List<string[]> Maps = new List<string[]>();
 
         // The map that is loaded into memory
         public List<string> CurrentMap;
@@ -32,6 +40,9 @@ namespace Group5FinalProject
         {
             // Reset the score
             GameReference.gameScore = 0;
+
+            // Reset timer
+            levelElapsedTime = 0;
 
             // This function loads whichever map specified into memory.
 
@@ -65,10 +76,15 @@ namespace Group5FinalProject
                     CurrentMap.Add(MapLine);
                 }
             }
+
+            // Set the level start time using the game timer
+            levelStartTime = GameReference.SecondsElapsed;
         }
 
         public void RenderMap(SpriteBatch spriteBatch)
         {
+            levelElapsedTime = GameReference.SecondsElapsed - levelStartTime;
+
             if (GameReference.SecondsElapsed > timeSinceLastEnemyUpdate)
             {
                 timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.5;
@@ -200,33 +216,50 @@ namespace Group5FinalProject
             });
             Maps.Add(new string[]
             {
-                "######################",
-                "#P___________#_______#",
-                "#____#####____E______#",
-                "#____#___#____#####_##",
-                "#__E_#___#___________#",
-                "#####___###########__#",
-                "#____________________#",
-                "#____E_______#____####",
-                "#F_______#####_______#",
-                "######################"
+                            "######################",
+                            "#P___________#_______#",
+                            "#____#####____E______#",
+                            "#____#___#____#####_##",
+                            "#__E_#___#___________#",
+                            "#####___###########__#",
+                            "#____________________#",
+                            "#____E_______#____####",
+                            "#F_______#####_______#",
+                            "######################"
             });
             Maps.Add(new string[]
 {
-                "########################",
-                "#P_______E#F___________#",
-                "#____E____#______E_____#",
-                "#_________#______E_____#",
-                "######____######_______#",
-                "#____E____#____________#",
-                "#_________#_______######",
-                "#______#####___________#",
-                "#____#_________E_______#",
-                "#________#___E_________#",
-                "#______________________#",
-                "#_____#____E_____E_____#",
-                "########################"
+                            "########################",
+                            "#P_______E#F___________#",
+                            "#____E____#______E_____#",
+                            "#_________#______E_____#",
+                            "######____######_______#",
+                            "#____E____#____________#",
+                            "#_________#_______######",
+                            "#______#####___________#",
+                            "#____#_________E_______#",
+                            "#________#___E_________#",
+                            "#______________________#",
+                            "#_____#____E_____E_____#",
+                            "########################"
             });
+            Maps.Add(new string[]
+{
+                            "###################################",
+                            "#P___###############_____________##",
+                            "#____E_###############_______######",
+                            "#_________##########____________F##",
+                            "######____######_______############",
+                            "#____E____#__#####________________#",
+                            "#_#####________#___#########____###",
+                            "#______#####______________________#",
+                            "#___#_________#######_E________E__#",
+                            "#________#___E____________________#",
+                            "#___________________#####_________#",
+                            "#_____#____E__#########___E_______#",
+                            "###################################"
+});
+
         }
     }
 }

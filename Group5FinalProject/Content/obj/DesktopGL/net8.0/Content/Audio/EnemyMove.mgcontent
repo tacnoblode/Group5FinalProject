@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>D:/Group5/Group5FinalProject/Content/Audio/EnemyMove.wav</SourceFile>
-  <SourceTime>2024-12-03T22:51:59.3965303-05:00</SourceTime>
+  <SourceTime>2024-12-04T16:26:07.7891254-05:00</SourceTime>
   <DestFile>D:/Group5/Group5FinalProject/Content/bin/DesktopGL/Content/Audio/EnemyMove.xnb</DestFile>
-  <DestTime>2024-12-03T23:01:48.2896513-05:00</DestTime>
+  <DestTime>2024-12-04T16:27:51.5238336-05:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2024-08-16T13:05:56-04:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>
