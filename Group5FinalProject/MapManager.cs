@@ -21,6 +21,8 @@ namespace Group5FinalProject
 
         public Dictionary<int, double> levelScores = new Dictionary<int, double>();
 
+        private int previousLevelId = -1;
+
 
         // The list of all the maps
         public List<string[]> Maps = new List<string[]>();
@@ -41,8 +43,11 @@ namespace Group5FinalProject
             // Reset the score
             GameReference.gameScore = 0;
 
-            // Reset timer
-            levelElapsedTime = 0;
+            // Reset timer only if the level is different from the previous one
+            if (previousLevelId != mapIndex)
+            {
+                levelElapsedTime = 0;  // Reset the timer
+            }
 
             // This function loads whichever map specified into memory.
 
@@ -78,7 +83,11 @@ namespace Group5FinalProject
             }
 
             // Set the level start time using the game timer
-            levelStartTime = GameReference.SecondsElapsed;
+            if (previousLevelId != mapIndex)
+            {
+                levelStartTime = GameReference.SecondsElapsed;
+            }
+            previousLevelId = mapIndex;
         }
 
         public void RenderMap(SpriteBatch spriteBatch)
