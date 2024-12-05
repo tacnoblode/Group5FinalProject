@@ -1,61 +1,14 @@
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
-C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
-<<<<<<< HEAD
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EndLevel.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EnemyMove.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\invalidMove.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\Mine.xnb
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
+C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
@@ -83,97 +36,3 @@ C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
 C:\Users\Meeran\Desktop\Game Prog Final Project\Meeran Branch\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
-=======
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
-C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EndLevel.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EnemyMove.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\invalidMove.xnb
-C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\Audio\Mine.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EndLevel.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EnemyMove.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Audio\invalidMove.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Audio\Mine.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
-D:\Group5\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
-D:\Group5\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EndLevel.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\EnemyMove.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\invalidMove.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Audio\Mine.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy0.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Enemy1.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Floor.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player0.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Player1.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\Sprites\Rocks.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
-C:\PauloProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
-C:\PauloProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
->>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6

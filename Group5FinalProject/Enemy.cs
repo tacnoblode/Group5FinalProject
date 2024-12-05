@@ -18,9 +18,6 @@ namespace Group5FinalProject
         private Random enemyMoveRandom = new Random();
 
 
-        private Random enemyMoveRandom = new Random();
-
-
         // ROTATION will represent which axis the enemy moves.
         // (-1,0) - Enemy will move LEFT on the screen
         // (1,0) - Enemy will move RIGHT on the screen
@@ -50,23 +47,20 @@ namespace Group5FinalProject
             {
                 RotateEnemyRandomly();
             }
-<<<<<<< HEAD
-            else if (objectInPath == 'p') 
-=======
             else if (objectInPath == 'p')
->>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
+
             {
                 RotateEnemyRandomly();
             }
             else
             {
-<<<<<<< HEAD
+
                 Position = enemyNextPosition;
-=======
+
                 if (enemyMoveRandom.Next(0, MapManager.AllEnemies.Count) == 0) { GameReference.snd_EnemyMove.Play(); }
                 Position = enemyNextPosition;
                 enemyWalkFrame = !enemyWalkFrame;
->>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
+
             }
             // This method will be called whenever the game wants to move the enemy (about 10 times a second)
             // TODO: Move the enemy in whatever direction it is facing

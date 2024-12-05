@@ -1,8 +1,7 @@
-﻿using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace Group5FinalProject
@@ -19,9 +18,9 @@ namespace Group5FinalProject
 
         // The map that is loaded into memory
         public List<string> CurrentMap;
-		public List<Enemy> AllEnemies;
+        public List<Enemy> AllEnemies;
 
-		public MapManager(Game1 gameReference)
+        public MapManager(Game1 gameReference)
         {
             GameReference = gameReference;
             LoadMapDatabase();
@@ -31,6 +30,7 @@ namespace Group5FinalProject
         public void LoadMap(int mapIndex)
         {
             AllEnemies = new List<Enemy>();
+            GameReference.SecondsElapsedInLevel = 0;
 
             // Reset the score
             GameReference.gameScore = 0;
@@ -71,18 +71,18 @@ namespace Group5FinalProject
 
         public void RenderMap(SpriteBatch spriteBatch)
         {
+            double enemySpeedUpdate = GameReference.SecondsElapsedInLevel > 15 ? 0.25 : 0.5;
+
             if (GameReference.SecondsElapsed > timeSinceLastEnemyUpdate)
             {
-                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.5;
+                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + enemySpeedUpdate;
+
                 foreach (Enemy enemy in AllEnemies)
                 {
                     enemy.MoveEnemy();
                 }
             }
-<<<<<<< HEAD
-=======
 
->>>>>>> 4d5b69e63bbd677af84e1d0c8b4e769eaf1d24c6
             // Map Rendering
             for (int i = 0; i < CurrentMap.Count; i++)
             {
@@ -90,7 +90,7 @@ namespace Group5FinalProject
                 {
                     if (CurrentMap[i][j] == '#') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.White); }
                     if (CurrentMap[i][j] == '_' || CurrentMap[i][j] == 'E') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Gray); }
-                    
+
                     if (CurrentMap[i][j] == 'F') { spriteBatch.Draw(GameReference.fallbackTexture, new Vector2(j * 64, i * 64) + (camera.Position * -64), Color.Yellow); }
                     if (CurrentMap[i][j] == 'p') { spriteBatch.Draw(GameReference.spr_Rock, new Vector2(j * 64, i * 64) + (camera.Position * -64), new Color(64, 64, 64)); }
                 }
@@ -111,15 +111,15 @@ namespace Group5FinalProject
             else { spriteBatch.Draw(GameReference.spr_Player1, player.Position * 64 + (camera.Position * -64), Color.White); }
         }
 
-		public void SetPlayerReference(Player player)
-		{
-			this.player = player;
-		}
+        public void SetPlayerReference(Player player)
+        {
+            this.player = player;
+        }
 
-		public void SetCameraReference(Camera camera)
-		{
-			this.camera = camera;
-		}
+        public void SetCameraReference(Camera camera)
+        {
+            this.camera = camera;
+        }
 
 
         public char GetObjectAtCoordinate(Vector2 coords)
@@ -132,14 +132,14 @@ namespace Group5FinalProject
                 if (CurrentMap[Convert.ToInt32(coords.Y)].Length > coords.X)
                 {
                     // Check all enemies first to see if they're at the position
-                    foreach( Enemy enemy in AllEnemies)
+                    foreach (Enemy enemy in AllEnemies)
                     {
                         if (enemy.isEnemyActive && enemy.Position == coords) { Debug.Print("E"); return 'E'; }
                     }
                     // If the code hasn't returned from any of those, return whatever's at the map at the coords
                     return CurrentMap[Convert.ToInt32(coords.Y)][Convert.ToInt32(coords.X)];
 
-				}
+                }
             }
             // If the coordinates are outside the map range, just return a blank space instead.
             return '_';
@@ -148,49 +148,49 @@ namespace Group5FinalProject
         public void ReplaceObjectAtPositionWith(Vector2 coords, char ToReplaceWith)
         {
             // Check if the position at the coordinates are valid
-			if (coords.X >= 0 && coords.Y >= 0 && CurrentMap.Count > coords.Y)
-			{
-				if (CurrentMap[Convert.ToInt32(coords.Y)].Length > coords.X)
-				{
+            if (coords.X >= 0 && coords.Y >= 0 && CurrentMap.Count > coords.Y)
+            {
+                if (CurrentMap[Convert.ToInt32(coords.Y)].Length > coords.X)
+                {
                     string MapLine = "";
                     for (int i = 0; i < CurrentMap[Convert.ToInt32(coords.Y)].Length; i++)
                     {
-                        if(i == Convert.ToInt32(coords.X)) { MapLine += ToReplaceWith; }
+                        if (i == Convert.ToInt32(coords.X)) { MapLine += ToReplaceWith; }
                         else { MapLine += CurrentMap[Convert.ToInt32(coords.Y)][i]; }
                     }
-					CurrentMap[Convert.ToInt32(coords.Y)] = MapLine;
-				}
-			}
-		}
+                    CurrentMap[Convert.ToInt32(coords.Y)] = MapLine;
+                }
+            }
+        }
 
-		// MAP DATABASE BELOW //
+        // MAP DATABASE BELOW //
 
-		// Symbols:
-		// # - Wall object
-		// E - Enemy object
-		// P - Player spawn point
-		// F - Level End Flag
+        // Symbols:
+        // # - Wall object
+        // E - Enemy object
+        // P - Player spawn point
+        // F - Level End Flag
         // p - The previous positions the player were in
         // v - Void (this character is only to add a space, it will render as black ingame
 
-		public void LoadMapDatabase()
-		{
-			// Place your maps in one of these functions to add them into the list
-			Maps.Add(new string[]
-			{
-				"###################",
-				"#_P__#___E________#",
-				"#____#___##__#____#",
-				"#____#_______###__#",
-				"##__#######__#____#",
-				"v#__#_E___#__#__###",
-				"v#__#___E____#____#",
-				"v#__#________#___F#",
-				"##__#######_####__#",
-				"#____________E_####",
-				"#####__###_____#vv",
-				"vvvv####v#######vv"
-			});
+        public void LoadMapDatabase()
+        {
+            // Place your maps in one of these functions to add them into the list
+            Maps.Add(new string[]
+            {
+                "###################",
+                "#_P__#___E________#",
+                "#____#___##__#____#",
+                "#____#_______###__#",
+                "##__#######__#____#",
+                "v#__#_E___#__#__###",
+                "v#__#___E____#____#",
+                "v#__#________#___F#",
+                "##__#######_####__#",
+                "#____________E_####",
+                "#####__###_____#vv",
+                "vvvv####v#######vv"
+            });
             Maps.Add(new string[]
             {
                 "######################",
