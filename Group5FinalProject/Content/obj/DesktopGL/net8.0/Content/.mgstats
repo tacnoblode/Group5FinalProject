@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/SelaProject/Group5FinalProject/Group5FinalProject/Content/DefaultFont.spritefont","C:/SelaProject/Group5FinalProject/Group5FinalProject/Content/bin/DesktopGL/Content/DefaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.3522205
+"C:/SelaProject/Group5FinalProject/Group5FinalProject/Content/WhiteBlock.png","C:/SelaProject/Group5FinalProject/Group5FinalProject/Content/bin/DesktopGL/Content/WhiteBlock.xnb","TextureProcessor","Texture2DContent",232,16469,0.024062

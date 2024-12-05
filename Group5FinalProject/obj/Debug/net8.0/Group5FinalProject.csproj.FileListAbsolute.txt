@@ -1,0 +1,120 @@
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
+C:\Group5Project\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
+C:\Group5Project\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
+C:\PROG2370 - Game Prog\Final Project\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
+C:\Group5GameDevAllGit\Main\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
+C:\Users\datys\Desktop\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
+C:\Users\datys\Desktop\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\DefaultFont.xnb
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Content\WhiteBlock.xnb
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.exe
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.deps.json
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.runtimeconfig.json
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\Group5FinalProject.pdb
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\NVorbis.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
+C:\SelaProject\Group5FinalProject\Group5FinalProject\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.AssemblyReference.cache
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfoInputs.cache
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.AssemblyInfo.cs
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.csproj.CoreCompileInputs.cache
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.sourcelink.json
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5Fi.533BA1C7.Up2Date
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\refint\Group5FinalProject.dll
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.pdb
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\Group5FinalProject.genruntimeconfig.cache
+C:\SelaProject\Group5FinalProject\Group5FinalProject\obj\Debug\net8.0\ref\Group5FinalProject.dll
