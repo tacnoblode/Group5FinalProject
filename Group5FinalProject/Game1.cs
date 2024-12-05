@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.CSharp;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Audio;
+using System;
+using System.Diagnostics;
 
 namespace Group5FinalProject
 {
@@ -34,6 +36,7 @@ namespace Group5FinalProject
         // Timers
         public int FramesElapsed = 0;
         public double SecondsElapsed = 0;
+        public double SecondsElapsedInLevel = 0;
 
         // Resources:
         public SpriteFont defaultFont;
@@ -73,6 +76,7 @@ namespace Group5FinalProject
             intermissionScreenManager = new IntermissionScreenManager(this,mapManager);
 
             GameCamera.SetPlayerReference(GamePlayer);
+            GameCamera.SetMapManagerReference(mapManager);
             mapManager.SetPlayerReference(GamePlayer);
             mapManager.SetCameraReference(GameCamera);
         }
@@ -107,6 +111,8 @@ namespace Group5FinalProject
             // Always update the times elapsed no matter what.
             FramesElapsed += 1;
             SecondsElapsed += gameTime.ElapsedGameTime.TotalSeconds;
+            SecondsElapsedInLevel += gameTime.ElapsedGameTime.TotalSeconds;
+
 
 
             switch (gameState)
@@ -115,6 +121,7 @@ namespace Group5FinalProject
                     titleScreenManager.TitleScreenInputs();
                     break;
                 case 1:
+                    intermissionScreenManager.userName = string.Empty;
                     GamePlayer.DoInputLogic();
                     GameCamera.UpdatePosition();
                     break;

@@ -11,11 +11,13 @@ namespace Group5FinalProject
 		// References
 		Player player;
 		Game1 GameReference;
+		MapManager mapReference;
 
 		// Control Variables
 		public Vector2 Position;
 
 		public Vector2 TempPosition;
+
 
 		public Camera(Vector2 position, Game1 GameRef)
 		{
@@ -27,8 +29,12 @@ namespace Group5FinalProject
 		{
 			this.player = player;
 		}
+        public void SetMapManagerReference(MapManager mapManager)
+        {
+            this.mapReference = mapManager;
+        }
 
-		public void UpdatePosition()
+        public void UpdatePosition()
 		{
 			// Linear interpolate to the player's position + an offset
 			TempPosition = player.Position;
@@ -41,7 +47,7 @@ namespace Group5FinalProject
         {
             _spriteBatch.DrawString(GameReference.defaultFont, $"Score: {GameReference.gameScore}", new Vector2(10, 10), Color.White);
             _spriteBatch.DrawString(GameReference.defaultFont, $"Level: {GameReference.levelId+1}", new Vector2(10, 40), Color.White);
-            _spriteBatch.DrawString(GameReference.defaultFont, $"Time: {(int)GameReference.SecondsElapsed} s", new Vector2(10, 70), Color.White);
+            _spriteBatch.DrawString(GameReference.defaultFont, $"Time: {mapReference.levelElapsedTime:F1} s", new Vector2(10, 70), Color.White);
             _spriteBatch.DrawString(GameReference.defaultFont, "Press R to restart level", new Vector2(10, 100), Color.White);
         }
     }

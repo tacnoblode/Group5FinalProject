@@ -13,9 +13,19 @@ namespace Group5FinalProject
         Player player;
         Camera camera;
         double timeSinceLastEnemyUpdate;
+        
+        public double levelStartTime;
+        public double levelElapsedTime;
+        public double levelFinishTime;
+        public Dictionary<int, double> levelTimes = new Dictionary<int, double>();
+
+        public Dictionary<int, double> levelScores = new Dictionary<int, double>();
+
+        private int previousLevelId = -1;
+
 
         // The list of all the maps
-        List<string[]> Maps = new List<string[]>();
+        public List<string[]> Maps = new List<string[]>();
 
         // The map that is loaded into memory
         public List<string> CurrentMap;
@@ -30,8 +40,16 @@ namespace Group5FinalProject
 
         public void LoadMap(int mapIndex)
         {
+
             // Reset the score
             GameReference.gameScore = 0;
+            GameReference.SecondsElapsedInLevel = 0;
+
+            // Reset timer only if the level is different from the previous one
+            if (previousLevelId != mapIndex)
+            {
+                levelElapsedTime = 0;  // Reset the timer
+            }
 
             // This function loads whichever map specified into memory.
 
@@ -65,13 +83,25 @@ namespace Group5FinalProject
                     CurrentMap.Add(MapLine);
                 }
             }
+
+            // Set the level start time using the game timer
+            if (previousLevelId != mapIndex)
+            {
+                levelStartTime = GameReference.SecondsElapsed;
+            }
+            previousLevelId = mapIndex;
         }
 
         public void RenderMap(SpriteBatch spriteBatch)
         {
+            levelElapsedTime = GameReference.SecondsElapsed - levelStartTime;
+
+            double enemySpeedUpdate = GameReference.SecondsElapsedInLevel > 15 ? 0.25 : 0.5;
+
             if (GameReference.SecondsElapsed > timeSinceLastEnemyUpdate)
             {
-                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + 0.5;
+                timeSinceLastEnemyUpdate = GameReference.SecondsElapsed + enemySpeedUpdate;
+
                 foreach (Enemy enemy in AllEnemies)
                 {
                     enemy.MoveEnemy();
@@ -200,33 +230,50 @@ namespace Group5FinalProject
             });
             Maps.Add(new string[]
             {
-                "######################",
-                "#P___________#_______#",
-                "#____#####____E______#",
-                "#____#___#____#####_##",
-                "#__E_#___#___________#",
-                "#####___###########__#",
-                "#____________________#",
-                "#____E_______#____####",
-                "#F_______#####_______#",
-                "######################"
+                            "######################",
+                            "#P___________#_______#",
+                            "#____#####____E______#",
+                            "#____#___#____#####_##",
+                            "#__E_#___#___________#",
+                            "#####___###########__#",
+                            "#____________________#",
+                            "#____E_______#____####",
+                            "#F_______#####_______#",
+                            "######################"
             });
             Maps.Add(new string[]
 {
-                "########################",
-                "#P_______E#F___________#",
-                "#____E____#______E_____#",
-                "#_________#______E_____#",
-                "######____######_______#",
-                "#____E____#____________#",
-                "#_________#_______######",
-                "#______#####___________#",
-                "#____#_________E_______#",
-                "#________#___E_________#",
-                "#______________________#",
-                "#_____#____E_____E_____#",
-                "########################"
+                            "########################",
+                            "#P_______E#F___________#",
+                            "#____E____#______E_____#",
+                            "#_________#______E_____#",
+                            "######____######_______#",
+                            "#____E____#____________#",
+                            "#_________#_______######",
+                            "#______#####___________#",
+                            "#____#_________E_______#",
+                            "#________#___E_________#",
+                            "#______________________#",
+                            "#_____#____E_____E_____#",
+                            "########################"
             });
+            Maps.Add(new string[]
+{
+                            "###################################",
+                            "#P___###############_____________##",
+                            "#____E_###############_______######",
+                            "#_________##########____________F##",
+                            "######____######_______############",
+                            "#____E____#__#####________________#",
+                            "#_#####________#___#########____###",
+                            "#______#####______________________#",
+                            "#___#_________#######_E________E__#",
+                            "#________#___E____________________#",
+                            "#___________________#####_________#",
+                            "#_____#____E__#########___E_______#",
+                            "###################################"
+});
+
         }
     }
 }
