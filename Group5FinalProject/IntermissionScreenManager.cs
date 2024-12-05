@@ -213,7 +213,7 @@ namespace Group5FinalProject
                 // Top-right corner position
                 Vector2 topRightPosition = new Vector2(GameReference.viewport.Width - 150, 20);
 
-                string topScoresLabel = "Top 3 scores:";
+                string topScoresLabel = "Top 3 MINERS:";
                 Vector2 topScoresLabelSize = GameReference.defaultFont.MeasureString(topScoresLabel);
 
                 // Draw the label for Top 3 scores
