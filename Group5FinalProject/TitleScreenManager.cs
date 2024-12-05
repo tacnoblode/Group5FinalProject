@@ -58,7 +58,7 @@ namespace Group5FinalProject
         // Draw the title screen and the level selection options
         public void DrawTitleScreen(SpriteBatch _spriteBatch)
         {
-            string gameTitle = "MASTER MINER";
+            string gameTitle = "MAJOR MINER";
             string gameCredits = "Created by Tyson, Meeran, Paulo, and Selahattin";
             Vector2 fontOrigin = GameReference.defaultFont.MeasureString(gameTitle) / 2;
             Vector2 creditsFontOrigin = GameReference.defaultFont.MeasureString(gameCredits) / 2;
